@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   def index
     redirect_to controller: 'sessions', action: 'new' unless session[:name]
   end
-    
+
   def current_user
     session[:name]
   end
