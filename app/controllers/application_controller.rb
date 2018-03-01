@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
   end
 
   def require_logged_in
-    redirect_to controller: 'sessions', action: 'new'  if !current_user
+    redirect_to controller: 'sessions', action: 'new'  unless current_user
   end
 end
