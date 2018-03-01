@@ -5,4 +5,10 @@ class SecretsController<ApplicationController
     require_logged_in
   end
 
+
+  private
+  def require_logged_in
+  end
+
+
   end
