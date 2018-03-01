@@ -8,6 +8,7 @@ class SecretsController<ApplicationController
 
   private
   def require_logged_in
+    redirect_to controller: 'sessions', action: 'new'  if !current_user
   end
 
 
